@@ -70,4 +70,4 @@ Implemente um mecanismo de controle de congestionamento simplificado similar ao 
 
 O arquivo `exemplo_integracao.py` vem com um exemplo de camada de aplicação que faz eco, ou seja, envia de volta para o cliente tudo que receber dele.
 
-Se você tiver feito o Trabalho 1, experimente executar `PYTHONPATH=grader ./servidor` usando o TCP que você escreveu agora no Trabalho 2. Talvez você pegue erros de implementação que não tenham sido detectados pelos testes! Se isso acontecer, entre em contato com o professor para que possamos melhorar os testes para edições futuras da disciplina.
+Se você tiver feito o Trabalho 1, experimente adaptá-lo para usar o TCP que você escreveu agora no Trabalho 2 (de acordo com o `exemplo_integracao.py`) e depois executar `PYTHONPATH=grader ./servidor`. Talvez você pegue erros de implementação que não tenham sido detectados pelos testes! Se isso acontecer, entre em contato com o professor para que possamos melhorar os testes para edições futuras da disciplina.
