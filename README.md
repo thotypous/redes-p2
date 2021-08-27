@@ -6,7 +6,7 @@ Ao longo de anos oferecendo essa disciplina, eu observo que os estudantes sempre
 
 Sua implementação deve ser realizada no arquivo `tcp.py`, que já veio com um esqueleto em cima do qual você vai construir o seu código. Para ajudar na sua implementação, você pode chamar as funções e usar os valores que já vieram declarados no arquivo [tcputils.py](https://github.com/thotypous/redes-t2-grader/blob/main/tcputils.py). Pode ser útil, também, consultar a [página sobre o formato do segmento TCP na Wikipedia](https://en.wikipedia.org/wiki/Transmission_Control_Protocol#TCP_segment_structure). Os [slides do livro-texto](https://1drv.ms/f/s!AlU8gesWGe8VeyYUZqcZmeP52vY) relevantes para este trabalho são os do Capítulo 3.
 
-Para testar seu código, execute `./autograde.py`. Cada um dos testes vai usar a sua implementação como uma biblioteca, verificando se ela apresenta o comportamento esperado.
+Para testar seu código, execute `./run-grader`. Cada um dos testes vai usar a sua implementação como uma biblioteca, verificando se ela apresenta o comportamento esperado.
 
 ## Passo 1 — 1 ponto
 
