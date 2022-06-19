@@ -1,5 +1,5 @@
 #!/bin/bash -xe
-GRADER_REPO=https://github.com/thotypous/redes-t2-grader
+GRADER_REPO=https://github.com/thotypous/redes-p2-grader
 if [[ -e grader ]]; then
     (cd grader && git pull)
 else
