@@ -1,3 +1,5 @@
+# JAMAIS MODIFIQUE O CONTEÚDO DESTE ARQUIVO
+
 # Antes de usar, execute o seguinte comando para evitar que o Linux feche
 # as conexões TCP que o seu programa estiver tratando:
 #

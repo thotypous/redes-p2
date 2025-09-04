@@ -1,6 +1,4 @@
-# Você pode usar tudo que está definido neste arquivo na sua implementação de TCP,
-# porém NÃO EDITE este arquivo. Se você editá-lo, ele será ignorado pelo robô de
-# correção do Autolab, pois os testes dependem das definições aqui realizadas.
+# JAMAIS MODIFIQUE O CONTEÚDO DESTE ARQUIVO
 
 import struct
 

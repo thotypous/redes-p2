@@ -1,0 +1,83 @@
+name: Autograding Tests
+on:
+- push
+- repository_dispatch
+permissions:
+  checks: write
+  actions: read
+  contents: read
+jobs:
+  run-autograding-tests:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-classroom[bot]'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run test 1 (Passo 1)
+        id: test1
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: test1
+          command: python -m unittest tests.test1
+          max-score: 1
+
+      - name: Run test 2 (Passo 2)
+        id: test2
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: test2
+          command: python -m unittest tests.test2
+          max-score: 1
+
+      - name: Run test 3 (Passo 3)
+        id: test3
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: test3
+          command: python -m unittest tests.test3
+          max-score: 1
+
+      - name: Run test 4 (Passo 4)
+        id: test4
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: test4
+          command: python -m unittest tests.test4
+          max-score: 1
+
+      - name: Run test 5 (Passo 5)
+        id: test5
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: test5
+          command: python -m unittest tests.test5
+          max-score: 2
+
+      - name: Run test 6 (Passo 6)
+        id: test6
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: test6
+          command: python -m unittest tests.test6
+          max-score: 2
+
+      - name: Run test 7 (Passo 7)
+        id: test7
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: test7
+          command: python -m unittest tests.test7
+          max-score: 2
+
+      - name: Report final grade
+        uses: classroom-resources/autograding-grading-reporter@v1
+        env:
+          TEST1_RESULTS: "${{steps.test1.outputs.result}}"
+          TEST2_RESULTS: "${{steps.test2.outputs.result}}"
+          TEST3_RESULTS: "${{steps.test3.outputs.result}}"
+          TEST4_RESULTS: "${{steps.test4.outputs.result}}" 
+          TEST5_RESULTS: "${{steps.test5.outputs.result}}"
+          TEST6_RESULTS: "${{steps.test6.outputs.result}}"
+          TEST7_RESULTS: "${{steps.test7.outputs.result}}"
+        with:
+          runners: test1,test2,test3,test4,test5,test6,test7
